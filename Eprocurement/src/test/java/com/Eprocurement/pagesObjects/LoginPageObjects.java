@@ -10,24 +10,32 @@ import com.Eprocurement.base_Class.BaseClass;
 public class LoginPageObjects extends BaseClass{
 	
 	
-	By emailField = By.cssSelector(loc.getProperty("emailInputField"));
-	By passwordField = By.cssSelector(loc.getProperty("passwordInputField"));
-	By loginBtn = By.cssSelector(loc.getProperty("loginButton"));
+	By emailField = By.cssSelector(prop.getProperty("emailInputField"));
+	By passwordField = By.cssSelector(prop.getProperty("passwordInputField"));
+	By loginBtn = By.cssSelector(prop.getProperty("loginButton"));
 	
+	
+
+	public LoginPageObjects(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		this.driver = driver;
+	}
+
 
 	public void setEmail(String Email) {
 		WebElement email = driver.findElement(emailField);
-		email.sendKeys(loc.getProperty("validEmailUser"));
+		email.sendKeys(prop.getProperty("validEmailUser"));
 	}
 
 	public void setPassword(String Password) {
 		WebElement pass = driver.findElement(passwordField);
-		pass.sendKeys(loc.getProperty("validPassword"));
+		pass.sendKeys(prop.getProperty("validPassword"));
 	}
 
 	public void clickLogin() {
 		WebElement Btn = driver.findElement(loginBtn);
 		Btn.click();
 	}
+	
 
 }

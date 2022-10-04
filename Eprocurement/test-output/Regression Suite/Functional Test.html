@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 14 10:46:11 WAT 2022</td>
+<td>Started on:</td><td>Thu Sep 22 22:47:11 WAT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46989 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44362 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,108 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Eprocurement.testcases.LoginTest.login()'><b>login</b><br>Test class: com.Eprocurement.testcases.LoginTest<br>Parameters: validEmailUser, invalidPassword<br/>
-<a href="#Output-366752671" onClick='toggleBox("Output-366752671", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-366752671" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-366752671">
-Test Starting - login<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=105.0.5195.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VendeasePCsMBP.lan&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a79a9d4684a60aed01e010d329afd28d, sendKeysToElement {id=59483110-137c-4480-9034-54e237f800a0, value=[Ljava.lang.CharSequence;@78226c36}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59491/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (a79a9d4684a60aed01e010d329afd28d)] -&gt; css selector: input[id=&apos;mat-input-1&apos;]]
-Session ID: a79a9d4684a60aed01e010d329afd28d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at com.Eprocurement.pagesObjects.LoginPageObjects.setPassword(LoginPageObjects.java:25)
-	at com.Eprocurement.testcases.LoginTest.login(LoginTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366752671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace366752671'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=105.0.5195.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VendeasePCsMBP.lan&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a79a9d4684a60aed01e010d329afd28d, sendKeysToElement {id=59483110-137c-4480-9034-54e237f800a0, value=[Ljava.lang.CharSequence;@78226c36}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59491/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (a79a9d4684a60aed01e010d329afd28d)] -&gt; css selector: input[id=&apos;mat-input-1&apos;]]
-Session ID: a79a9d4684a60aed01e010d329afd28d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at com.Eprocurement.pagesObjects.LoginPageObjects.setPassword(LoginPageObjects.java:25)
-	at com.Eprocurement.testcases.LoginTest.login(LoginTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>com.Eprocurement.testcases.LoginTest@2473d930</td></tr>
-<tr>
 <td title='com.Eprocurement.testcases.LoginTest.login()'><b>login</b><br>Test class: com.Eprocurement.testcases.LoginTest<br>Parameters: invalidEmailUser, validPassword<br/>
-<a href="#Output-1064315206" onClick='toggleBox("Output-1064315206", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1221433900" onClick='toggleBox("Output-1221433900", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1064315206" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1064315206">
+<a href="#Output-1221433900" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1221433900">
 Test Starting - login<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;mat-input-0&apos;]&quot;}
-  (Session info: chrome=105.0.5195.102)
+  (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VendeasePCsMBP.lan&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
+System info: host: &apos;Vendease-PCs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a79a9d4684a60aed01e010d329afd28d, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59491/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a79a9d4684a60aed01e010d329afd28d
+Command: [4f6bbba60425cae6fb7baf1165a36ec7, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f6bbba60425cae6fb7baf1165a36ec7
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -191,16 +106,16 @@ Session ID: a79a9d4684a60aed01e010d329afd28d
 	at com.Eprocurement.pagesObjects.LoginPageObjects.setEmail(LoginPageObjects.java:19)
 	at com.Eprocurement.testcases.LoginTest.login(LoginTest.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064315206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1064315206'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;mat-input-0&apos;]&quot;}
-  (Session info: chrome=105.0.5195.102)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221433900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221433900'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;mat-input-0&apos;]&quot;}
+  (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VendeasePCsMBP.lan&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
+System info: host: &apos;Vendease-PCs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a79a9d4684a60aed01e010d329afd28d, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59491/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a79a9d4684a60aed01e010d329afd28d
+Command: [4f6bbba60425cae6fb7baf1165a36ec7, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f6bbba60425cae6fb7baf1165a36ec7
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -248,22 +163,22 @@ Session ID: a79a9d4684a60aed01e010d329afd28d
 <td>com.Eprocurement.testcases.LoginTest@2473d930</td></tr>
 <tr>
 <td title='com.Eprocurement.testcases.LoginTest.login()'><b>login</b><br>Test class: com.Eprocurement.testcases.LoginTest<br>Parameters: invalidEmailUser, invalidPassword<br/>
-<a href="#Output-950729555" onClick='toggleBox("Output-950729555", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1992525817" onClick='toggleBox("Output-1992525817", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-950729555" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-950729555">
+<a href="#Output-1992525817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1992525817">
 Test Starting - login<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;mat-input-0&apos;]&quot;}
-  (Session info: chrome=105.0.5195.102)
+  (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VendeasePCsMBP.lan&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
+System info: host: &apos;Vendease-PCs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a79a9d4684a60aed01e010d329afd28d, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59491/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a79a9d4684a60aed01e010d329afd28d
+Command: [4f6bbba60425cae6fb7baf1165a36ec7, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f6bbba60425cae6fb7baf1165a36ec7
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -278,16 +193,16 @@ Session ID: a79a9d4684a60aed01e010d329afd28d
 	at com.Eprocurement.pagesObjects.LoginPageObjects.setEmail(LoginPageObjects.java:19)
 	at com.Eprocurement.testcases.LoginTest.login(LoginTest.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace950729555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace950729555'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;mat-input-0&apos;]&quot;}
-  (Session info: chrome=105.0.5195.102)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1992525817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1992525817'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;mat-input-0&apos;]&quot;}
+  (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VendeasePCsMBP.lan&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
+System info: host: &apos;Vendease-PCs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a79a9d4684a60aed01e010d329afd28d, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59491/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a79a9d4684a60aed01e010d329afd28d
+Command: [4f6bbba60425cae6fb7baf1165a36ec7, findElement {using=css selector, value=input[id=&apos;mat-input-0&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f6bbba60425cae6fb7baf1165a36ec7
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -334,11 +249,96 @@ Session ID: a79a9d4684a60aed01e010d329afd28d
 <td>0</td>
 <td>com.Eprocurement.testcases.LoginTest@2473d930</td></tr>
 <tr>
-<td title='com.Eprocurement.testcases.LogoutTest.logout()'><b>logout</b><br>Test class: com.Eprocurement.testcases.LogoutTest<br/>
-<a href="#Output-1595354442" onClick='toggleBox("Output-1595354442", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.Eprocurement.testcases.LoginTest.login()'><b>login</b><br>Test class: com.Eprocurement.testcases.LoginTest<br>Parameters: validEmailUser, invalidPassword<br/>
+<a href="#Output-1722645488" onClick='toggleBox("Output-1722645488", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1595354442" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1595354442">
+<a href="#Output-1722645488" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1722645488">
+Test Starting - login<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Vendease-PCs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f6bbba60425cae6fb7baf1165a36ec7, sendKeysToElement {id=8c3f494e-2af9-44a8-b177-f32b8bb2864c, value=[Ljava.lang.CharSequence;@15e0fe05}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4f6bbba60425cae6fb7baf1165a36ec7)] -&gt; css selector: input[id=&apos;mat-input-1&apos;]]
+Session ID: 4f6bbba60425cae6fb7baf1165a36ec7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at com.Eprocurement.pagesObjects.LoginPageObjects.setPassword(LoginPageObjects.java:25)
+	at com.Eprocurement.testcases.LoginTest.login(LoginTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1722645488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1722645488'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Vendease-PCs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c1a:7784:696a:91e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.2.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f6bbba60425cae6fb7baf1165a36ec7, sendKeysToElement {id=8c3f494e-2af9-44a8-b177-f32b8bb2864c, value=[Ljava.lang.CharSequence;@15e0fe05}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/rh/8qphg_t56sv...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4f6bbba60425cae6fb7baf1165a36ec7)] -&gt; css selector: input[id=&apos;mat-input-1&apos;]]
+Session ID: 4f6bbba60425cae6fb7baf1165a36ec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at com.Eprocurement.pagesObjects.LoginPageObjects.setPassword(LoginPageObjects.java:25)
+	at com.Eprocurement.testcases.LoginTest.login(LoginTest.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.Eprocurement.testcases.LoginTest@2473d930</td></tr>
+<tr>
+<td title='com.Eprocurement.testcases.LogoutTest.logout()'><b>logout</b><br>Test class: com.Eprocurement.testcases.LogoutTest<br/>
+<a href="#Output-1366741625" onClick='toggleBox("Output-1366741625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1366741625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1366741625">
 Test Starting - logout<br/>
 </div>
 </td>
@@ -346,14 +346,14 @@ Test Starting - logout<br/>
 	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:204)
 	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:287)
 	at org.openqa.selenium.By.xpath(By.java:89)
-	at com.Eprocurement.testcases.LogoutTest.logout(LogoutTest.java:17)
+	at com.Eprocurement.testcases.LogoutTest.logout(LogoutTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1595354442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1595354442'><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1366741625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1366741625'><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
 	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:204)
 	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:287)
 	at org.openqa.selenium.By.xpath(By.java:89)
-	at com.Eprocurement.testcases.LogoutTest.logout(LogoutTest.java:17)
+	at com.Eprocurement.testcases.LogoutTest.logout(LogoutTest.java:16)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -393,24 +393,24 @@ Test Starting - logout<br/>
 </tr>
 <tr>
 <td title='com.Eprocurement.testcases.LoginTest.login()'><b>login</b><br>Test class: com.Eprocurement.testcases.LoginTest<br>Parameters: validEmailUser, validPassword<br/>
-<a href="#Output-783141366" onClick='toggleBox("Output-783141366", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1677840544" onClick='toggleBox("Output-1677840544", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-783141366" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-783141366">
+<a href="#Output-1677840544" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677840544">
 Test Starting - login<br/>
 Login Test Passed<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>com.Eprocurement.testcases.LoginTest@2473d930</td></tr>
 <tr>
 <td title='com.Eprocurement.testcases.VerifyHomepageTitleTest.verifyHomepageTitle()'><b>verifyHomepageTitle</b><br>Test class: com.Eprocurement.testcases.VerifyHomepageTitleTest<br/>
-<a href="#Output-1037346554" onClick='toggleBox("Output-1037346554", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1610155589" onClick='toggleBox("Output-1610155589", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1037346554" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1037346554">
+<a href="#Output-1610155589" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1610155589">
 Test Starting - verifyHomepageTitle<br/>
 Status of execution is - 1<br/>
 </div>

@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="login" invocation-numbers="1 2 3"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Eprocurement.testcases.LoginTest -->
     </classes>

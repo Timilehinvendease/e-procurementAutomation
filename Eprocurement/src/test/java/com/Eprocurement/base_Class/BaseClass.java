@@ -18,9 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	
-	public  static WebDriver driver;
+	public WebDriver driver = null;
 	public static Properties prop = new Properties();
-	public static Properties loc = new Properties();
 	public static FileReader configFile;
 	public static FileReader locatorsFile;
 	
@@ -31,10 +30,10 @@ public class BaseClass {
 		
 		if (driver == null)
 		{
-		    configFile = new FileReader(System.getProperty("user.dir") + "//src//test//resources//configuretion.properties//configfile.properties");
-		    locatorsFile = new FileReader(System.getProperty("user.dir")+ "//src//test//resources//configuretion.properties//locators.properties");
+		    configFile = new FileReader(System.getProperty("user.dir") + "/src/test/resources/configuretion.properties/configfile.properties");
+//		    locatorsFile = new FileReader(System.getProperty("user.dir")+ "//src//test//resources//configuretion.properties//locators.properties");
 			prop.load(configFile);
-			loc.load(locatorsFile);
+//			loc.load(locatorsFile);
 		}
 
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
@@ -53,7 +52,7 @@ public class BaseClass {
 
 	@AfterTest
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 
 }

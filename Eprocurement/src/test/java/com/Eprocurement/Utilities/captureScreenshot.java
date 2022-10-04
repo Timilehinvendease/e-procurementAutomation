@@ -7,11 +7,14 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import com.Eprocurement.base_Class.BaseClass;
 
 public class captureScreenshot extends BaseClass {
 
+	
+	
 	public void getScreenshot() throws IOException {
 		Date currendate = new Date();
 		String screenshotfilename = currendate.toString().replace(" ", "-").replace(":", "-");

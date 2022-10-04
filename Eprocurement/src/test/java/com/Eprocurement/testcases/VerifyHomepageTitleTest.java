@@ -1,6 +1,7 @@
 package com.Eprocurement.testcases;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.Eprocurement.base_Class.BaseClass;
@@ -12,11 +13,12 @@ public class VerifyHomepageTitleTest extends BaseClass{
 	@Test(priority = 1)
 	public void verifyHomepageTitle()
 	{ 
-		Homepage hmpage = new Homepage();	
+		Homepage hmpage = new Homepage(driver);	
+		String ExpectedTitle = "Vendease";
 		hmpage.getHomepageTitle();		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = "Vendease";
-		Assert.assertEquals(ActualTitle, ExpectedTitle);	
+	    Assert.assertEquals(ActualTitle, ExpectedTitle);	
+	    Reporter.log(ActualTitle);
 	}
 	
 

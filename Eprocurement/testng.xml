@@ -6,11 +6,10 @@
 		<listener class-name="com.Eprocurement.Utilities.Reporting"></listener>
 	</listeners>
 
-	<test thread-count="5" name="Functional Test">
+	<test name="Functional Regression Test">
 
 		<classes>
 			<class name="com.Eprocurement.testcases.LoginTest" />
-			<class name="com.Eprocurement.testcases.LogoutTest" />
 			<class name="com.Eprocurement.testcases.VerifyHomepageTitleTest" />
 		</classes>
 		

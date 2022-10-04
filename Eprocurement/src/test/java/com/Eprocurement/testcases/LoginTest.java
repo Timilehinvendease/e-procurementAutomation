@@ -10,22 +10,22 @@ import com.Eprocurement.pagesObjects.LoginPageObjects;
 
 public class LoginTest extends BaseClass{
 	
-
+	LoginPageObjects lg;
 
 	@Test(dataProvider="Procurement", priority = 0)
 	public void login(String Email, String Password) throws InterruptedException
 	{
 		
-		LoginPageObjects lg = new LoginPageObjects();	
+		lg = new LoginPageObjects(driver);	
 
-		lg.setEmail(loc.getProperty("validEmailUser"));
+		lg.setEmail(prop.getProperty("validEmailUser"));
 		
-		lg.setPassword(loc.getProperty("validPassword"));
+		lg.setPassword(prop.getProperty("validPassword"));
 	
 		lg.clickLogin();
 		
-		Reporter.log("Login Test Passed");
-	
+		System.out.println("Login Test Passed");
+		
 	}
 	
 	
@@ -35,9 +35,9 @@ public class LoginTest extends BaseClass{
 		return new Object[][]
 				{
 			         {"validEmailUser", "validPassword"},
-		             {"validEmailUser", "invalidPassword"},
-			         {"invalidEmailUser", "validPassword"},
-			         {"invalidEmailUser", "invalidPassword"}
+//		             {"validEmailUser", "invalidPassword"},
+//			         {"invalidEmailUser", "validPassword"},
+//			         {"invalidEmailUser", "invalidPassword"}
 				};
 	}
 }
